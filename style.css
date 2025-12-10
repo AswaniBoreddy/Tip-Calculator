@@ -1,0 +1,99 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f7f7f7;
+  padding: 20px;
+}
+
+.container {
+  background: white;
+  padding: 25px;
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-top: 10px;
+}
+
+input, select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.preset-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.preset-buttons button {
+  width: 30%;
+  padding: 10px;
+  border: none;
+  background: #eee;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.preset-buttons button:hover {
+  background: #ddd;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  background: #5c6bc0;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background: #3f4fa3;
+}
+
+.reset {
+  background: #ff5252;
+}
+
+.reset:hover {
+  background: #d63030;
+}
+
+.result {
+  margin-top: 20px;
+  font-size: 18px;
+  background: #f1f1f1;
+  padding: 15px;
+  border-radius: 8px;
+  display: none;
+}
+
+/* Mobile Responsive */
+@media(max-width: 480px) {
+  .preset-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .preset-buttons button {
+    width: 100%;
+  }
+}

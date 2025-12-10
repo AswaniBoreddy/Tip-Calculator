@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced Tip Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <h2>Tip Calculator</h2>
+
+    <!-- Currency Selector -->
+    <label>Select Currency:</label>
+    <select id="currency">
+      <option value="₹">₹ INR</option>
+      <option value="$">$ USD</option>
+      <option value="€">€ EUR</option>
+      <option value="£">£ GBP</option>
+    </select>
+
+    <!-- Bill Amount -->
+    <label>Bill Amount:</label>
+    <input type="number" id="bill" placeholder="Enter bill amount">
+
+    <!-- Preset Tip Buttons -->
+    <label>Select Tip:</label>
+    <div class="preset-buttons">
+      <button onclick="setTip(5)">5%</button>
+      <button onclick="setTip(10)">10%</button>
+      <button onclick="setTip(15)">15%</button>
+    </div>
+
+    <!-- Custom Tip -->
+    <input type="number" id="custom-tip" placeholder="Or enter custom tip %">
+
+    <!-- Split -->
+    <label>Number of People:</label>
+    <input type="number" id="people" value="1" min="1">
+
+    <button onclick="calculateTip()">Calculate</button>
+    <button class="reset" onclick="resetAll()">Reset</button>
+
+    <div class="result">
+      <p id="tip-amount"></p>
+      <p id="total-amount"></p>
+      <p id="per-person"></p>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
